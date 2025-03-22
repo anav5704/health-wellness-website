@@ -1,3 +1,9 @@
+:root {
+    --primary: #001e2b; /* Slate Blue */
+    --secondary: #00684a; /* Forest Green */
+    --accent: #00ed64; /* Spring Green */
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
