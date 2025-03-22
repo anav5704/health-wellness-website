@@ -24,8 +24,17 @@
     margin: 0;
 }
 
+body {
+    text-underline-offset: 3px;
+}
+
+main {
+    gap: 50px;
+}
+
 p,
 a,
+h3,
 button {
     font-family: "Geist";
 }
@@ -36,22 +45,30 @@ a {
 }
 
 header {
+    top: 0;
+    position: sticky;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 25px;
     background-color: white;
-}
+    border-bottom: 1px solid var(--primary);
 
-header ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+    ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 h1,
 h2 {
     font-family: "Merriweather";
-    text-align: center;
 }
 
 h1 {
@@ -59,9 +76,42 @@ h1 {
     line-height: 100%;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    > p {
+        text-align: center;
+    }
+}
+
+#services,
+#resources {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 25px;
+}
+
 button {
     padding: 15px 30px;
-    border-radius: 10px;
+    border-radius: calc(infinity * 1px);
     font-size: 1rem;
     cursor: pointer;
     border: none;
@@ -71,7 +121,7 @@ button {
     text-align: center;
     background-color: var(--primary);
     color: white;
-    height: 80vh;
+    height: calc(100vh - 80px);
     border-radius: 0px 0px 100px 100px;
     display: flex;
     gap: 25px;
@@ -80,6 +130,43 @@ button {
     justify-content: center;
 }
 
+#cta {
+    background-color: var(--primary);
+    padding: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    h2 {
+        margin-bottom: 0px;
+    }
+}
+
+.primary-button {
+    background-color: var(--accent);
+    border: 1px solid var(--primary);
+}
+
+.secondary-text {
+    color: var(--secondary);
+}
+
 .accent-text {
     color: var(--accent);
+}
+
+.grid-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+    padding: 25px;
+    border-radius: 25px;
+    column-span: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
