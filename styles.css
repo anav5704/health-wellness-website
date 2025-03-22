@@ -4,8 +4,82 @@
     --accent: #00ed64; /* Spring Green */
 }
 
+@font-face {
+    font-family: "Merriweather";
+    src: url("fonts/Merriweather.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geist";
+    src: url("fonts/Geist.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+p,
+a,
+button {
+    font-family: "Geist";
+}
+
+p,
+a {
+    font-size: 1.25rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-family: "Merriweather";
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 100%;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+#hero {
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+    height: 80vh;
+    border-radius: 0px 0px 100px 100px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accent-text {
+    color: var(--accent);
 }
