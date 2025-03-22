@@ -59,10 +59,15 @@ header {
         display: flex;
         gap: 50px;
         list-style: none;
-    }
 
-    a {
-        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .active {
+            color: black;
+        }
     }
 }
 
@@ -167,6 +172,7 @@ button {
 .card {
     padding: 25px;
     border-radius: 25px;
+    border: 1px solid black;
     column-span: 1;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
