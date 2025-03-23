@@ -9,3 +9,5 @@ links.forEach((link) => {
         this.classList.add("active");
     });
 });
+
+document.getElementById("year").innerText = new Date().getFullYear()
