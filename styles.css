@@ -41,7 +41,7 @@ button {
 
 p,
 a {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 header {
@@ -179,6 +179,10 @@ footer {
             color: white;
         }
     }
+}
+
+.subtitle {
+    font-size: 1.5rem;
 }
 
 .primary-button {

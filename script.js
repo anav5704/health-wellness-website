@@ -10,4 +10,4 @@ links.forEach((link) => {
     });
 });
 
-document.getElementById("year").innerText = new Date().getFullYear()
+document.getElementById("year").textContent = new Date().getFullYear()
