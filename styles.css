@@ -35,12 +35,15 @@ main {
 p,
 a,
 h3,
-button {
+button,
+table {
     font-family: "Geist";
 }
 
 p,
-a {
+a,
+tr,
+caption {
     font-size: 1.125rem;
 }
 
@@ -110,6 +113,10 @@ section {
     }
 }
 
+section:last-of-type {
+    margin-bottom: 0;
+}
+
 #services,
 #resources {
     width: 80vw;
@@ -137,7 +144,6 @@ button {
     background-color: var(--primary);
     color: white;
     height: calc(100vh - 80px);
-    border-radius: 0px 0px 100px 100px;
     display: flex;
     gap: 25px;
     flex-direction: column;
@@ -160,15 +166,38 @@ button {
     }
 }
 
-footer {
+table {
+    border: 1px solid #ffffff50;
+    border-collapse: collapse;
+
+    td,
+    th {
+        border: 1px solid #ffffff50;
+        padding: 10px;
+    }
+
+    a {
+        color: var(--accent);
+    }
+
+    caption {
+        margin-top: 25px;
+    }
+}
+
+#hotlines {
     background-color: var(--primary);
+    padding: 100px;
+    color: white;
+}
+
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
     gap: 25px;
-    color: white;
 
     ul {
         display: flex;
@@ -176,7 +205,7 @@ footer {
         list-style: none;
 
         a {
-            color: white;
+            color: black;
         }
     }
 }
@@ -218,4 +247,9 @@ footer {
     border: 1px solid black;
     column-span: 1;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    a {
+        float: right;
+        color: var(--secondary);
+    }
 }
