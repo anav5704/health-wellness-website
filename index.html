@@ -8,7 +8,7 @@
         <script defer src="script.js"></script>
 
         <meta property="og:description" content="Support, therapy, and tools to help you feel better." />
-        <meta property="og:url" content="https://health.anav.dev" />
+        <meta property="og:url" content="https://best-health.vercel.app" />
         <meta property="og:image" content="assets/og.png" />
         <meta property="og:title" content="Best Health" />
 
@@ -20,14 +20,15 @@
     <body>
         <header>
             <p>
-                <img src="assets/logo-light.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
+                <img src="assets/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
             </p>
             <nav>
                 <ul>
-                    <li><a class="nav-link active" href="">Home</a></li>
-                    <li><a class="nav-link" href="">Services</a></li>
-                    <li><a class="nav-link" href="">Therapists</a></li>
-                    <li><a class="nav-link" href="">Blogs</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="therapists.html">Therapists</a></li>
+                    <li><a href="booking.html">Gifting</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
                 </ul>
             </nav>
             <button class="primary-button">Crate Account</button>
@@ -60,22 +61,22 @@
                 </p>
                 <div class="grid-3">
                     <article class="card">
-                        <img src="images/therapy.png" alt="Therapy Sessions" title="Therapy Sessions" />
+                        <img src="images/therapy.png" alt="Therapy Sessions" title="Therapy Sessions" height="300" width="300" />
                         <h3>Therapy Sessions</h3>
                         <p>Private sessions with licensed therapists to discuss emotions, challenges, and personal growth.</p>
                         <a href="booking.html">Book Session</a>
                     </article>
                     <article class="card">
-                        <img src="images/gifting.png" alt="Confidential Chat" title="Confidential Chat" />
+                        <img src="images/gifting.png" alt="Session Gifting" title="Session Gifting" height="300" width="300" />
                         <h3>Session Gifting</h3>
                         <p>Gift a therapy session to support a loved one’s emotional well-being and mental health.</p>
                         <a href="booking.html">Gift Session</a>
                     </article>
                     <article class="card">
-                        <img src="images/support.png" alt="Health Tools" title="Health Tools" />
-                        <h3>AI Support Tools</h3>
-                        <p>AI powered Chatbot offers proactive self-care tips, thoughtful questions, and emotional support.</p>
-                        <a href="ai-chat.html">Chat With AI</a>
+                        <img src="images/assessment.png" alt="Self Assessment" title="Self Assessment" height="300" width="300" />
+                        <h3>Self Assessment</h3>
+                        <p>Assess your mental well-being, identify stress levels, and discover areas for personal growth.</p>
+                        <a href="quiz.html">Take Quiz</a>
                     </article>
                 </div>
             </section>
@@ -83,7 +84,7 @@
             <section id="cta">
                 <h2>Join <span class="accent-text">Best Health</span> Today</h2>
                 <p class="subtitle">Investing in your mental health is the most important investment you'll ever make.</p>
-                <button class="primary-button">Book Session</button>
+                <button class="primary-button">Get Started</button>
             </section>
 
             <section id="resources">
@@ -147,7 +148,7 @@
         </main>
 
         <footer>
-            <img src="assets/logo-light.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
+            <img src="assets/logo.png" alt="Best Health Logo" title="Best Health Logo" height="45" width="200" />
             <ul>
                 <li><a href="">Facebook</a></li>
                 <li><a href="">Instagram</a></li>
@@ -156,5 +157,9 @@
             </ul>
             <p>&copy; <span id="year"></span> Best Health. All rights reserved.</p>
         </footer>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
